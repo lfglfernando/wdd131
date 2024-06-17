@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Luis Fernando Galvez Lopez">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="playwrite-fr-moderne">
+        <h1>WDD 131: Dynamic Web Fundamentals - </h1><h2 class="name">Luis F. Galvez</h2>
+    </header>
+    <nav class="playwrite-fr-moderne">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/luis-fernando-g%C3%A1lvez-lopez-089655240/">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/.">I-Learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/manual/book-of-mormon-seminary-teacher-manual-2024/13-2-nephi-31-33/135-teacher?lang=eng">Scripture</a></li>
+            <li><a href="#" class="placeholder-link">Final Project</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <main class="card">
+            <h2 class="h2">About Me</h2>
+            <div class="aboutme-container">
+                <p>Hello, my name is Fernando. I am from Mexico and currently living in Provo, Utah. I am studying software development at Brigham Young University - Idaho. Two months ago, I married the love of my life, Amy.</p>
+                <img class="profile" src="images/fernando-profile.jpeg" alt="Profile Picture">
+            </div>
+            <div class="culiacan-bottom">
+                <h2>Culiacan, Mexico</h2>
+            </div>
+            <div class="flag-container">
+                <div class="flag-order">
+                    <img class="flag" src="images/mexico-flag.png" alt="Flag of Mexico">
+                    <p>Official Flag of Mexico</p>
+                </div>
+                <div class="flag-description">
+                    <p>Mexico, officially the United Mexican States, is a country in the southern portion of North America. Covering 1,972,550 km2 (761,610 sq mi), it is the world's 13th largest country by area; with a population of almost 130 million, it is the 10th most populous country and has the most Spanish speakers in the world. Mexico is organized as a federal constitutional republic comprising 31 states and Mexico City, its capital the largest capital.</p>
+                </div>
+            </div>
+        </main>
+        <aside class="card">
+            <h2 class="h2">Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://www.lorempicsum.com">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer class="playwrite-fr-moderne">
+        <p>&copy;<span id="currentyear"></span> Luis Fernando Galvez <i class="fas fa-flower"></i> Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
