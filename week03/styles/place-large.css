@@ -1,0 +1,94 @@
+@media (min-width: 820px) {
+    :root {
+        --primary-color: blue;
+        --secondary-color: red;
+        --text-color: white;
+        --font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        font-family: var(--font-family);
+        margin: 0;
+        background-color: #f4f4f9;
+    }
+
+
+    
+    header h1 {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    }
+    
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .data, .weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        
+    }
+    
+    .data {
+        top: 140px;
+        left: 10px;
+    }
+    
+    .weather {
+        bottom: 100px;
+        right: 20px;
+    }
+    
+    .data h2, .weather h2 {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        padding: 0.5rem;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .data p, .weather p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    
+    footer {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 1rem;
+        text-align: center;
+        margin-top: -1.4rem;
+    }
+    
+    @media (max-width: 600px) {
+        .data, .weather {
+            width: 80%;
+            left: 10%;
+            right: 10%;
+        }
+    
+        .data {
+            top: 10px;
+        }
+    
+        .weather {
+            bottom: 10px;
+        }
+    }
+    
+}

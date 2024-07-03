@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Place using css responsive and Javascript conecting to html">
+    <meta name="author" content="Luis Fernando Galvez Lopez">
+    <title>Provo Utah Weather - WDD131 - WEB DYNAMICS</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>United States</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+              <source srcset="images/hero-large-provo-city.webp" media="(min-width: 1500px)">
+              <source srcset="images/hero-medium-provo-city.webp" media="(min-width: 550px)">
+              <img src="images/hero-small-provo-city.webp" alt="Usa Temples" width="">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <p><span class="label">Area:</span>  9,833,520 sq km</p>
+            <p><span class="label">Population:</span>  331,449,281</p>
+            <p><span class="label">Capital:</span>  Washington, D.C.</>
+            <p><span class="label">Languages:</span>  English</p>
+            <p><span class="label">Currency:</span>  United States Dollar (USD)</p>
+            <p><span class="label">Time Zones:</span>  UTC-5 to UTC-10, plus two non-contiguous zones in Alaska and Hawaii</p>
+            <p><span class="label">Calling Code:</span>  +1</p>
+            <p><span class="label">Internet TLD:</span>  .us</p>
+        </section>
+        <span class="border"></span>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/wheater.svg" width="100" height="100" >
+            <p><b>Temperature:</b>  20°C</p>
+            <p><b>Conditions:</b>  Clear Sky</p>
+            <p><b>Wind:</b>  10 km/h</p>
+            <p><b>Wind Chill:</b> <span  id="windChill"></span>°C</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⛈️ Luis Fernando Galvez ⛈️ Provo, Utah</p>
+            <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/place.js"></script>
+</body>
+</html>
