@@ -51,6 +51,13 @@ header h1 {
     margin-bottom: 10px;
 }
 
+.data h2::after, .weather h2::after {
+    content: "🔹"; /* Example icon, you can use any Unicode character or CSS content */
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
 .data p {
     font-size: 18px;
     margin: 5px 0;
