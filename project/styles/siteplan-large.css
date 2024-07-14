@@ -1,0 +1,77 @@
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    figcaption {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    footer {
+        background-color: green;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+
+@media (min-width: 37.5em) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 48em) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 64em) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-container img {
+        border: none; /* Remove border when there are multiple columns */
+    }
+}

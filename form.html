@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Forms using good desing and friendly to the users">
+    <meta name="author" content="Fernando Galvez">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1"> 
+            <label for="product-choosen" class="product-label">Product Name </label>
+                <select name="product" id="product-choosen" required>
+                <option value="" disabled selected>Select a Product... &#9662;</option>
+
+                </select>
+
+            <div class="overall">Overall Rating</div>
+            <div class="rating-container">
+                <label class="rating-label">
+                    <input type="radio" class="rating-input" id="1star" name="audience" value="1star" required>
+                    <span class="rating-star">&star;</span>
+                </label>
+                <label class="rating-label">
+                    <input type="radio" class="rating-input" id="2star" name="audience" value="2star" required>
+                    <span class="rating-star">&star;&star;</span>
+                </label>
+                <label class="rating-label">
+                    <input type="radio" class="rating-input" id="3star" name="audience" value="3star"required>
+                    <span class="rating-star">&star;&star;&star;</span>
+                </label>
+                <label class="rating-label">
+                    <input type="radio" class="rating-input" id="4star" name="audience" value="4star" required>
+                    <span class="rating-star">&star;&star;&star;&star;</span>
+                </label>
+                <label class="rating-label">
+                    <input type="radio" class="rating-input" id="5star" name="audience" value="5star" required>
+                    <span class="rating-star">&star;&star;&star;&star;&star;</span>
+                </label>
+            </div>
+
+            <label for="installation-date" class="date">Date of Installation </label>
+                <input type="date" id="installation-date" name="installation-date" required>
+
+            <div class="checkbox">Which features did you find useful in the product?<br>(Check all that apply)</div>
+            <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+            <label for="easy"><input type="checkbox" id="easy" name="easy" value="yes"> Easy of Use</label>
+            <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+            <label for="design"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+
+            <label for="text-review" class="written">Written Review <a>(Optional)</a></label>
+                <textarea id="text-review" name="text-review"></textarea>
+
+            <label for="fname" class="name">Your Name <a>(Optional)</a> </label>
+                <input type="text" id="fname" name="fname">
+
+        <input type="submit" value="Post Review">
+
+
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⛈️ Luis Fernando Galvez ⛈️ Provo, Utah</p>
+            <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>

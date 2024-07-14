@@ -9,7 +9,6 @@
     body {
         font-family: var(--font-family);
         margin: 0;
-        background-color: #f4f4f9;
     }
 
 
@@ -34,39 +33,6 @@
         object-fit: cover;
     }
     
-    .data, .weather {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
-        padding: 1rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 350px;
-        
-    }
-    
-    .data {
-        top: 140px;
-        left: 10px;
-    }
-    
-    .weather {
-        bottom: 100px;
-        right: 20px;
-    }
-    
-    .data h2, .weather h2 {
-        background-color: var(--secondary-color);
-        color: var(--text-color);
-        padding: 0.5rem;
-        border-radius: 5px;
-        text-align: center;
-    }
-    
-    .data p, .weather p {
-        font-size: 1rem;
-        margin: 0.5rem 0;
-    }
-    
     footer {
         background-color: var(--primary-color);
         color: var(--text-color);
@@ -74,21 +40,15 @@
         text-align: center;
         margin-top: -1.4rem;
     }
-    
-    @media (max-width: 600px) {
-        .data, .weather {
-            width: 80%;
-            left: 10%;
-            right: 10%;
+
+    @media only screen and (min-width: 64rem) {
+
+        header, nav, main, footer {
+            max-width: 64rem;
+            margin:auto;
         }
     
-        .data {
-            top: 10px;
-        }
-    
-        .weather {
-            bottom: 10px;
-        }
+        
     }
     
 }
