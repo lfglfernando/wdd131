@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #80ed99;
     --secondary-color: #38a3a5;
@@ -17,55 +23,22 @@ header h1 {
     text-align: center;
 
 }
-
-
-
-/*----------- BODY --------------*/
-body {
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
-}
-
-
-/*----------- HEADER --------------*/
-header {
-    padding: .5rem 2%;
-    background-color: #ddd;
-}
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
-
-/*----------- NAVIGATION --------------*/
-nav {
-    background-color: #666;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {border-bottom: solid 1px #333;}
-nav ul li a {
-    display: block;
-    background-color: #444;
-    color: #eee;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-}
-nav ul li.active a {
-    background-color: #000;
-    color: #fff;
-}
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
-    margin: 1%;
-    min-height: 20rem;
+    padding-left:1rem ;
+    margin: 0.3rem;
+    margin-bottom: 2rem;
     background-color: var(--primary-color);
     border: solid 1px wheat;
     border-radius: 6px;
+}
+
+.reviewhtml {
+    height: 400px;
+}
+
+.reviewhtml p {
+    padding-top: 1rem;
 }
 
 
@@ -95,6 +68,7 @@ main {
 .date {
     margin-top: 1rem;
     padding-bottom: 5px;
+    
 }
 
 .name {
@@ -106,7 +80,6 @@ main {
 .wf1 input[type="text"],
 .wf1 input[type="tel"],
 .wf1 input[type="email"],
-.wf1 input[type="url"],
 .wf1 input[type="date"],
 .wf1 select,
 .wf1 input[type="number"]
@@ -117,8 +90,7 @@ main {
     border-radius: 6px;
     padding: .75rem;
     color: #555;
-    width: 100%;
-    max-width: 400px;
+    width: 97%;
     appearance: none;
 }
 
@@ -136,7 +108,7 @@ main {
     border-radius: 6px;
     padding: .8rem;
     font-size: 18px;
-    width: 100%;
+    width: 97%;
     margin: 2rem 0px 2rem 0px;
     box-shadow: 1px 1px 4px #999;
 }
@@ -156,7 +128,7 @@ main {
 
 
 textarea {
-    width: 100%;
+    width: 97%;
     height: 150px;
     padding: 10px;
     vertical-align: top;
