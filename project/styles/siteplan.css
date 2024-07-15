@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #80ed99;
+    --secondary-color: #38a3a5;
+    --text-color: white;
+    --font-family: 'Poppins', sans-serif;
+}
+
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -16,7 +23,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: navy;
+    color: black;
     font-size: 1.5rem;
     margin: 1rem 0;
 }
@@ -26,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: #333;
+    background-color: var(--secondary-color);
     color: #fff;
 }
 
@@ -68,6 +75,138 @@ header {
     display: flex;
 }
 
+/* START HOME CSS STYLE */
+
+  
+.container {
+    margin: auto;
+    max-width: 1300px;
+    padding: 80px 20px;
+}
+  
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0;
+}
+  
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+  
+.text-section {
+    margin-bottom: 20px;
+}
+  
+.intro-text {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 300;
+}
+  
+.intro-heading {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+  
+.highlight {
+    color: var(--primary-color);
+}
+  
+.intro-subtext {
+    font-size: 1.25rem;
+    padding-bottom: 15px;
+    max-width: 80%;
+    margin: auto;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #22577a;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #38a3a5;
+}
+  
+.image-section {
+    margin-top: 20px;
+}
+  
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  /* END OF HOME CSS STYLE */
+
+
+  /* START ABOUT ME SECTION CSS STYLE */
+
+  .container-section {
+    background-color: var(--primary-color);
+    margin: auto;
+    max-width: 1300px;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.row {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-lg-6, .col-sm-12, .col-lg-5 {
+    flex: 1;
+    margin: 10px;
+}
+
+.img-thumbnail {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #58abe5;
+    padding-bottom: 50px;
+}
+
+.about-text p {
+    padding-bottom: 20px;
+}
+
+  /* END ABOUT ME SECTION CSS STYLE */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -123,11 +262,82 @@ figcaption {
     margin-top: 0.5rem;
 }
 
+/* START FOOTER CSS STYLE*/
 
 footer {
-    background-color: green;
-    color: white;
-    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 40px 20px;
     text-align: center;
-    margin-top: 1rem;
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.contact-info {
+    max-width: 400px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #58abe5;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 60px;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+}
+
+/* ENDS FOOTER CSS STYLE */
