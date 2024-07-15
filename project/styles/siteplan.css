@@ -224,6 +224,15 @@ header {
     background-color: #f9f9f9; 
 }
 
+.card-a {
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.card-a:hover {
+    transform: translateY(-5px);
+}
+
 .temple-card h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
