@@ -161,7 +161,7 @@ header {
 
   /* START ABOUT ME SECTION CSS STYLE */
 
-  .container-section {
+.container-section {
     background-color: var(--primary-color);
     margin: auto;
     max-width: 1300px;
@@ -277,7 +277,7 @@ figcaption {
 
  /* START CONTACT ME FORM CSS*/
 
- .contactme {
+.contactme {
     background-color: var(--primary-color);
     padding: 2rem;
 
@@ -303,10 +303,6 @@ figcaption {
     padding-top: 0.6rem;
 }
 
-.overall {
-    padding-top: 2rem;
-}
-
 .wf1 div {
     color: black;
 }
@@ -315,10 +311,6 @@ figcaption {
 .written {
     padding-bottom: 5px;
     margin-top: 1.5rem;
-}
-
-.checkbox {
-    padding-top: 2.5rem;
 }
 
 .date {
@@ -366,10 +358,6 @@ figcaption {
 
 .wf1 input:required:valid {
     border-left: solid 5px green;
-}
-
-.product-label {
-    padding-bottom: 5px;
 }
 
 

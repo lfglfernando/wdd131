@@ -25,6 +25,8 @@
         padding: 1rem;
     }
 
+}
+
     /* START HOME CSS STYLE */
 
     @media (min-width: 768px) {
@@ -105,7 +107,6 @@
         margin-top: 0.5rem;
     }
 
-}
 
 
 @media (min-width: 37.5em) {
