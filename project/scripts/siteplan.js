@@ -16,39 +16,12 @@ const projects = [
       projectLink: "https://lfglfernando.github.io/wdd131/filtered-temples.html"
     },
     {
-        projectName: "Manti Utah",
-        languages: "Manti, Utah, United States",
+        projectName: "Book of Mormon - Top 10",
+        languages: "HTML, CSS, JavaScript",
         date: "1888, May, 21",
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg",
-        projectLink: "https://lfglfernando.github.io/wdd130/proposal/netflix.html"
-
-    },
-    {
-        projectName: "Manti Utah",
-        languages: "Manti, Utah, United States",
-        date: "1888, May, 21",
-        imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg",
-        projectLink: "https://lfglfernando.github.io/wdd130/proposal/netflix.html"
-
-    },
-    {
-        projectName: "Manti Utah",
-        languages: "Manti, Utah, United States",
-        date: "1888, May, 21",
-        imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg",
-        projectLink: "https://lfglfernando.github.io/wdd130/proposal/netflix.html"
-
-    },
-    {
-        projectName: "Manti Utah",
-        languages: "Manti, Utah, United States",
-        date: "1888, May, 21",
-        imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg",
-        projectLink: "https://lfglfernando.github.io/wdd130/proposal/netflix.html"
+        "images/bom.png",
+        projectLink: "https://lfglfernando.github.io/wdd131/week05/bom.html"
 
     }
   ];

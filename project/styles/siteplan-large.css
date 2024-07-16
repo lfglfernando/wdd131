@@ -129,3 +129,52 @@
         border: none; /* Remove border when there are multiple columns */
     }
 }
+
+/* START LARGE CONTACT ME FORM CSS */
+
+@media (min-width: 400px) {
+
+    textarea {
+        width: 400px;
+        height: 150px;
+        padding: 10px;
+        vertical-align: top;
+        resize: vertical;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .wf1 input[type="text"],
+    .wf1 input[type="tel"],
+    .wf1 input[type="email"],
+    .wf1 input[type="date"],
+    .wf1 select,
+    .wf1 input[type="number"]
+    {
+        background-color: white;
+        display: block;
+        border: solid 1px #999;
+        border-radius: 6px;
+        padding: .75rem;
+        color: #555;
+        width: 100%;
+        max-width: 400px;
+        appearance: none;
+
+    }
+
+    .wf1 input[type="submit"]{
+        border: none;
+        background-color: #22577a;
+        color: #fff;
+        border-radius: 6px;
+        padding: .8rem;
+        font-size: 18px;
+        width: 400px;
+        margin: 2rem 0px 2rem 0px;
+        box-shadow: 1px 1px 4px #999;
+    }
+
+}
+
+/* ENDS LARGE CONTACT ME FORM CSS */
