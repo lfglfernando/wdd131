@@ -22,22 +22,31 @@
         </nav>
     </header>
     <main id="home">
-        <h2>Home</h2>
-        <main class="container">
-            <div class="intro-container">
-              <div class="intro-content">
-                <div class="text-section">
-                  <p class="intro-text">Designer, Developer, Creator.</p>
-                  <h1 class="intro-heading"><span class="highlight">Software Developer</span><br>Freelancer</h1>
-                  <p class="intro-subtext"></p>
-                  <a href="aboutme.html" class="btn btn-primary">About Me</a>
-                </div>
-                <div class="image-section">
-                  <img src="images/profile.jpeg" alt="Profile-picture" class="profile-image" loading="lazy">
-                </div>
-              </div>
-            </div>
-          </main>
+
+        <section class="contactme">
+            <h2 id="contactme">Contact Me</h2>
+            <form method="get" action="../review.html" class="wf1"> 
+                <label for="fname" class="name">Recruiter Name</label>
+                    <input type="text" id="fname" name="fname" required>
+
+                <label for="company" class="name">Company Name</label>
+                    <input type="text" id="company" name="company" required>
+
+                <label for="email" class="name">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required  >
+            
+    
+                <label for="meeting" class="date">Schedule a Meeting with me</label>
+                    <input type="date" id="meeting" name="meeting">
+    
+                <label for="text-review" class="written">Comments<a>(Optional)</a></label>
+                    <textarea id="text-review" name="text-review" placeholder="Skills required, On-site, Schedule, Offer."></textarea>
+
+                
+                <input type="submit" value="Upload Data">
+    
+            </form>
+        </section>
 
     </main>
     <footer>
