@@ -1,29 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const projects = [
+    let projects = JSON.parse(localStorage.getItem('projects')) || [
       {
         projectName: "Marriage Proposal",
         languages: "HTML, CSS, JavaScript",
         date: "Nov, 2023",
-        imageUrl:
-        "images/marriage-proposal.webp",
+        imageUrl: "images/marriage-proposal.webp",
         projectLink: "https://lfglfernando.github.io/wdd130/proposal/netflix.html"
       },
       {
         projectName: "Temple List",
         languages: "HTML, CSS, JavaScript",
         date: "July, 2024",
-        imageUrl:
-        "images/temple-list.webp",
+        imageUrl: "images/temple-list.webp",
         projectLink: "https://lfglfernando.github.io/wdd131/filtered-temples.html"
       },
       {
-          projectName: "Book of Mormon - Top 10",
-          languages: "HTML, CSS, JavaScript",
-          date: "1888, May, 21",
-          imageUrl:
-          "images/bom.png",
-          projectLink: "https://lfglfernando.github.io/wdd131/week05/bom.html"
-  
+        projectName: "Book of Mormon - Top 10",
+        languages: "HTML, CSS, JavaScript",
+        date: "1888, May, 21",
+        imageUrl: "images/bom.png",
+        projectLink: "https://lfglfernando.github.io/wdd131/week05/bom.html"
       }
     ];
   
@@ -60,17 +56,43 @@ document.addEventListener('DOMContentLoaded', () => {
       container.appendChild(figure);
     }
   
-    projects.forEach(createProjectCard);
+    function renderProjects() {
+      document.querySelector('.grid-container').innerHTML = '';
+      projects.forEach(createProjectCard);
+    }
+  
+    renderProjects();
   
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
   
     hamButton.addEventListener('click', () => {
-        navigation.classList.toggle('open');
-        hamButton.classList.toggle('open');
+      navigation.classList.toggle('open');
+      hamButton.classList.toggle('open');
     });
   
     document.getElementById('currentyear').textContent = new Date().getFullYear();
     document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+  
+    const projectForm = document.getElementById('project-form');
+  
+    projectForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+  
+      const newProject = {
+        projectName: event.target.projectName.value,
+        languages: event.target.languages.value,
+        date: event.target.date.value,
+        imageUrl: event.target.imageUrl.value,
+        projectLink: event.target.projectLink.value
+      };
+  
+      projects.push(newProject);
+      localStorage.setItem('projects', JSON.stringify(projects));
+  
+      renderProjects();
+  
+      projectForm.reset();
+    });
   });
   

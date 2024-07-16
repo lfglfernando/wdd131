@@ -275,6 +275,47 @@ figcaption {
 
 /* ENDS PROJECTS CSS */
 
+/* form project */
+/* Form Styles */
+#add-project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    
+}
+
+#project-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+#project-form label {
+    margin: 10px 0 5px;
+}
+
+#project-form input, #project-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#project-form button {
+    background-color: #22577a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#project-form button:hover {
+    background-color: #555;
+}
+
  /* START CONTACT ME FORM CSS*/
 
 .contactme {
