@@ -19,14 +19,19 @@
     --main-color: #00eeff;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 section {
@@ -425,6 +430,10 @@ span {
  }
 
  @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     #menu-icon {
         display: block;
     }
@@ -451,6 +460,10 @@ span {
         margin: 3rem 0;
     }
 
+    .header, .section {
+        max-width: 100%;
+    }
+
     .home {
         flex-direction: column;
     }
@@ -464,12 +477,16 @@ span {
     }
 
     .home-img img {
-        width: 70vw;
+        width: 100%;
         margin-top: 4rem;
     }
 
     .about {
         flex-direction: column-reverse;
+    }
+
+    .about-img ima {
+        width: 100%;
     }
 
     .about img {
@@ -499,7 +516,6 @@ span {
  @media (max-width: 450px) {
     html {
         font-size: 50%;
-        overflow-x: hidden;
 
     }
 
@@ -509,9 +525,6 @@ span {
  }
 
  @media (max-width: 365px) {
-    html {
-        overflow-x: hidden;
-    }
     .home-img img {
         width: 90vw;
     }
