@@ -509,6 +509,9 @@ span {
  }
 
  @media (max-width: 365px) {
+    html {
+        overflow-x: hidden;
+    }
     .home-img img {
         width: 90vw;
     }
